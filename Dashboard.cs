@@ -21,6 +21,7 @@ namespace CountryFlagNavigator
             FillCountries();
             countryInfoBox.ReadOnly = true;
             countryNameBox.ReadOnly = true;
+            capitalNameBox.ReadOnly = true;
             undoButton.Visible = false;
             LoadCountryData();
         }
@@ -66,7 +67,7 @@ namespace CountryFlagNavigator
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show(
-                "Are you sure you want to delete this country",
+                "Are you sure you want to delete this country?",
                 "Delete confirmation", 
                 MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
@@ -90,11 +91,6 @@ namespace CountryFlagNavigator
                     deleteButton.Visible = countries.Count > 0;
                 }
             }
-            else if (dialogResult == DialogResult.No)
-            {
-                //do something else
-            }
-            
         }
 
         private void UndoButton_Click(object sender, EventArgs e)

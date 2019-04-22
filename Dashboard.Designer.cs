@@ -64,7 +64,7 @@
             // 
             // flagBox
             // 
-            this.flagBox.Location = new System.Drawing.Point(148, 12);
+            this.flagBox.Location = new System.Drawing.Point(148, 27);
             this.flagBox.Name = "flagBox";
             this.flagBox.Size = new System.Drawing.Size(100, 50);
             this.flagBox.TabIndex = 2;
@@ -89,7 +89,7 @@
             // countryInfo
             // 
             this.countryInfo.AutoSize = true;
-            this.countryInfo.Location = new System.Drawing.Point(15, 115);
+            this.countryInfo.Location = new System.Drawing.Point(12, 124);
             this.countryInfo.Name = "countryInfo";
             this.countryInfo.Size = new System.Drawing.Size(31, 17);
             this.countryInfo.TabIndex = 6;
@@ -105,7 +105,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.deleteButton.BackColor = System.Drawing.SystemColors.Control;
             this.deleteButton.Location = new System.Drawing.Point(173, 108);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 30);
@@ -126,7 +126,7 @@
             // 
             // capitalNameBox
             // 
-            this.capitalNameBox.Location = new System.Drawing.Point(15, 77);
+            this.capitalNameBox.Location = new System.Drawing.Point(15, 80);
             this.capitalNameBox.Name = "capitalNameBox";
             this.capitalNameBox.Size = new System.Drawing.Size(100, 22);
             this.capitalNameBox.TabIndex = 10;
@@ -134,7 +134,7 @@
             // countryCapital
             // 
             this.countryCapital.AutoSize = true;
-            this.countryCapital.Location = new System.Drawing.Point(12, 57);
+            this.countryCapital.Location = new System.Drawing.Point(12, 60);
             this.countryCapital.Name = "countryCapital";
             this.countryCapital.Size = new System.Drawing.Size(51, 17);
             this.countryCapital.TabIndex = 11;
