@@ -39,7 +39,9 @@
             this.undoButton = new System.Windows.Forms.Button();
             this.capitalNameBox = new System.Windows.Forms.TextBox();
             this.countryCapital = new System.Windows.Forms.Label();
+            this.countryPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.flagBox)).BeginInit();
+            this.countryPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // prevButton
@@ -64,7 +66,7 @@
             // 
             // flagBox
             // 
-            this.flagBox.Location = new System.Drawing.Point(148, 27);
+            this.flagBox.Location = new System.Drawing.Point(132, 17);
             this.flagBox.Name = "flagBox";
             this.flagBox.Size = new System.Drawing.Size(100, 50);
             this.flagBox.TabIndex = 2;
@@ -72,7 +74,7 @@
             // 
             // countryNameBox
             // 
-            this.countryNameBox.Location = new System.Drawing.Point(15, 29);
+            this.countryNameBox.Location = new System.Drawing.Point(3, 19);
             this.countryNameBox.Name = "countryNameBox";
             this.countryNameBox.Size = new System.Drawing.Size(100, 22);
             this.countryNameBox.TabIndex = 3;
@@ -80,7 +82,7 @@
             // countryName
             // 
             this.countryName.AutoSize = true;
-            this.countryName.Location = new System.Drawing.Point(12, 9);
+            this.countryName.Location = new System.Drawing.Point(0, -1);
             this.countryName.Name = "countryName";
             this.countryName.Size = new System.Drawing.Size(57, 17);
             this.countryName.TabIndex = 5;
@@ -106,7 +108,7 @@
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.SystemColors.Control;
-            this.deleteButton.Location = new System.Drawing.Point(173, 108);
+            this.deleteButton.Location = new System.Drawing.Point(173, 113);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 30);
             this.deleteButton.TabIndex = 8;
@@ -116,7 +118,7 @@
             // 
             // undoButton
             // 
-            this.undoButton.Location = new System.Drawing.Point(78, 108);
+            this.undoButton.Location = new System.Drawing.Point(78, 113);
             this.undoButton.Name = "undoButton";
             this.undoButton.Size = new System.Drawing.Size(75, 30);
             this.undoButton.TabIndex = 9;
@@ -126,7 +128,7 @@
             // 
             // capitalNameBox
             // 
-            this.capitalNameBox.Location = new System.Drawing.Point(15, 80);
+            this.capitalNameBox.Location = new System.Drawing.Point(3, 70);
             this.capitalNameBox.Name = "capitalNameBox";
             this.capitalNameBox.Size = new System.Drawing.Size(100, 22);
             this.capitalNameBox.TabIndex = 10;
@@ -134,31 +136,41 @@
             // countryCapital
             // 
             this.countryCapital.AutoSize = true;
-            this.countryCapital.Location = new System.Drawing.Point(12, 60);
+            this.countryCapital.Location = new System.Drawing.Point(0, 50);
             this.countryCapital.Name = "countryCapital";
             this.countryCapital.Size = new System.Drawing.Size(51, 17);
             this.countryCapital.TabIndex = 11;
             this.countryCapital.Text = "Capital";
             // 
+            // countryPanel
+            // 
+            this.countryPanel.Controls.Add(this.countryNameBox);
+            this.countryPanel.Controls.Add(this.countryCapital);
+            this.countryPanel.Controls.Add(this.flagBox);
+            this.countryPanel.Controls.Add(this.capitalNameBox);
+            this.countryPanel.Controls.Add(this.countryName);
+            this.countryPanel.Location = new System.Drawing.Point(13, 13);
+            this.countryPanel.Name = "countryPanel";
+            this.countryPanel.Size = new System.Drawing.Size(235, 99);
+            this.countryPanel.TabIndex = 12;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(263, 331);
-            this.Controls.Add(this.countryCapital);
-            this.Controls.Add(this.capitalNameBox);
+            this.ClientSize = new System.Drawing.Size(262, 331);
+            this.Controls.Add(this.countryPanel);
             this.Controls.Add(this.undoButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.countryInfoBox);
             this.Controls.Add(this.countryInfo);
-            this.Controls.Add(this.countryName);
-            this.Controls.Add(this.countryNameBox);
-            this.Controls.Add(this.flagBox);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.prevButton);
             this.Name = "Dashboard";
             this.Text = "Country Flag Navigator";
             ((System.ComponentModel.ISupportInitialize)(this.flagBox)).EndInit();
+            this.countryPanel.ResumeLayout(false);
+            this.countryPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,6 +189,7 @@
         private System.Windows.Forms.Button undoButton;
         private System.Windows.Forms.TextBox capitalNameBox;
         private System.Windows.Forms.Label countryCapital;
+        private System.Windows.Forms.Panel countryPanel;
     }
 }
 

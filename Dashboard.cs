@@ -1,19 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CountryFlagNavigator
 {
     public partial class Dashboard : Form
     {
-        private LinkedList<Country> countries = new LinkedList<Country>();
-        private LinkedList<Country> archivedCountries = new LinkedList<Country>();
+        private readonly LinkedList<Country> countries = new LinkedList<Country>();
+        private readonly LinkedList<Country> archivedCountries = new LinkedList<Country>();
         private Country currentCountry;
         public Dashboard()
         {
@@ -68,7 +63,7 @@ namespace CountryFlagNavigator
         {
             DialogResult dialogResult = MessageBox.Show(
                 "Are you sure you want to delete this country?",
-                "Delete confirmation", 
+                "Delete confirmation",
                 MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
